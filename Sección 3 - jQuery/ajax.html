@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendiendo jQuery</title>
+  <!-- Integrando jQuery -->
+  <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+  <!-- Fin de jQuery -->
+  <script type="text/javascript" src="./js/05-ajax.js"></script>
+
+  <style>
+    #datos{
+      border: 2px solid purple;
+      width: 250px;
+      height: 250px;
+      overflow: scroll;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Aprendiendo jQuery - Efectos</h1>
+
+  <form action="https://reqres.in/api/users" method="POST" id="formulario">
+    Nombre: <input type="text" name="name">
+    Web: <input type="text" name="web">
+    <input type="submit" value="Registrar">
+  </form>
+
+  <br>
+
+  <div id="datos"></div>
+</body>
+</html>
