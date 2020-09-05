@@ -6,13 +6,127 @@
     <title>Aprendienod jQuery</title>
     <!-- Integrando jQuery y jQuery UI-->
     <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="./js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./js/jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="./js/jquery-ui/jquery-ui.theme.css">
+    
     <script type="text/javascript" src="./js/jquery-ui/jquery-ui.min.js"></script>
     <!-- Fin de jQuery -->
     <script type="text/javascript" src="./js/06-interface.js"></script>
 
+    <style>
+        .elemento{
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: pink;
+            margin: 20px;
+            float: left;
+        }
+        .lista-seleccionable li{
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            list-style: none;
+            cursor: pointer;
+        }
+        ul .ui-selecting{background:#444; color: #ccc;}
+        ul .ui-selected{background:black; color: white;}
+        #elemento-movido{
+            width: 100px;
+            height: 100px;
+            border: 4px solid #5e2129;
+        }
+        #area{
+            width: 300px;
+            height: 300px;
+            border: 4px solid blue;
+        }
+        .elemento{
+            float: none;
+            display: none;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Aprendiendo jQuery UI</h1>
+    <hr>
 
+    <h3>Pestañas</h3>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#tabs-1">Pestaña 1</a></li>
+            <li><a href="#tabs-2">Pestaña 2</a></li>
+            <li><a href="#tabs-3">Pestaña 3</a></li>
+        </ul>
+        <div id="tabs-1">
+            Hola, soy el contenido de la pestaña 1.
+        </div>
+        <div id="tabs-2">
+            Yo tengo el contenido de la pestaña 2.
+        </div>
+        <div id="tabs-3">
+            Yo finalizo las pestañas, por ende soy la
+        </div>
+    </div>
+
+    <hr>
+
+    <hr>
+
+    <h3>Calendario</h3>
+    <input type="text" id="calendario">
+
+    <hr>
+
+    <hr>
+
+    <h3>Cuadros de diálogo</h3>
+    <button id="lanzar-popup">Salir</button>
+    <div class="popup" title="¿Estás seguro?" style="display:none;">
+        <p>Si continúas en el curso aprenderás mucho de Javascript</p>
+    </div>
+
+
+    <hr>
+
+    <hr>
+
+    <h3>Tooltip</h3>
+    <a href="#" title="Acceder a la sección de mis datos de esta web">Mis datos</a>
+    <a href="#" title="Inicia sesión en esta web">Identificarse</a>
+    <a href="#" title="Ver todos los amigos">Amigos</a>
+
+
+    <hr>
+    <button id="mostrar">Mostrar</button>
+
+    <div class="caja-efectos elemento"></div>
+
+    <div id="elemento-movido"></div>
+    <br>
+    <div id="area"></div>
+
+    <ul class="lista-seleccionable">
+        <li>Far cry</li>
+        <li>Spiderman</li>
+        <li>Dark Souls</li>
+        <li>Super Mario</li>
+        <li>Duck Hunt</li>
+    </ul>
+
+    <div class="elemento">
+        Hola, soy un elemento de la web. 1
+    </div>
+
+    <div class="elemento">
+        Hola, soy un elemento de la web. 2
+    </div>
+
+    <div class="elemento">
+        Hola, soy un elemento de la web. 3
+    </div>
 </body>
 </html>
