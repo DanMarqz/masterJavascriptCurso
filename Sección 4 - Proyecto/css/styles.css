@@ -1,0 +1,180 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix{
+  float:none;
+  clear: both;
+}
+
+body{
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#global{
+  width: 65%;
+  margin: 0px auto;
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  box-shadow: 0px 0px 2px gray;
+}
+
+#logo{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 28px;
+  letter-spacing: 4px;
+  line-height: 80px;
+  background: #85dad4;
+  color: white;
+  text-align: center;
+  width: 440px;
+  height: 80px;
+  margin-bottom: 20px;
+  float: left;
+  border-radius: 50%;
+}
+
+#menu{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #85dad4;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#menu ul{
+  line-height: 44px;
+}
+
+#menu li{
+  height: 44px;
+  display: inline-block;
+  list-style: none;
+  transition: all 300ms;
+}
+
+#menu ul li:hover{
+  background: #67b8b2;
+}
+
+#menu a{
+  display:block;
+  color:white;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#posts{
+width: 60%;
+float:left;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.post{
+  padding: 7px;
+}
+
+.post h2{
+  font-size: 30px;
+  color: #333;
+}
+
+.post .date{
+  display: block;
+  color: gray;
+  margin-top: 5px;
+}
+
+.post p{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.button-more{
+  font-size: 14px;
+  text-align: center;
+  display:block;
+  padding: 15px;
+  background: #85dad4;
+  text-decoration: none;
+  margin-top: 10px;
+  width: 70px;
+  color:white;
+  box-shadow: 0px 0px 2px gray;
+  margin-bottom: 20px;
+}
+
+.button-more:hover{
+  background: #67b8b2;
+}
+
+#sidebar{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 31%;
+  float: right;
+}
+
+#sidebar h4{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 10px;
+  color: #333;
+  background: url("../img/minus.png");
+}
+
+#sidebar h4 span{
+  background: white;
+  padding: 10px;
+}
+
+#sidebar img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+#sidebar p{
+  font-size: 15px;
+  text-align: justify;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  width: 80%;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 1px aquamarine;
+  margin-top: 5px;
+}
+
+form input[type="submit"]{
+  border-radius: 5px;
+  background: #85dad4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: white;
+  cursor: pointer;
+}
+
+footer{
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  height: 47px;
+  background: rgba(51,51,51,0.70);
+  margin: 0px auto;
+  width: 65%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+  line-height: 47px;
+  font-style: italic;
+}
