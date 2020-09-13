@@ -1,0 +1,33 @@
+body{
+  background-image: url(../img/bg-pink.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#logo{
+  background: pink;
+}
+
+#menu{
+  background: pink;
+}
+
+#menu ul li:hover{
+  background: salmon;
+}
+
+.button-more{
+  background: pink;
+}
+
+.button-more:hover{
+  background: salmon;
+}
+
+form input[type="submit"]{
+  background: pink;
+}
+
+form input[type="submit"]:hover{
+  background: salmon;
+}

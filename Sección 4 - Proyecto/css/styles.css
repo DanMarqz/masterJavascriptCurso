@@ -28,7 +28,6 @@ body{
   font-size: 28px;
   letter-spacing: 4px;
   line-height: 80px;
-  background: #85dad4;
   color: white;
   text-align: center;
   width: 440px;
@@ -40,7 +39,6 @@ body{
 
 #menu{
   font-family: Arial, Helvetica, sans-serif;
-  background: #85dad4;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -54,10 +52,6 @@ body{
   display: inline-block;
   list-style: none;
   transition: all 300ms;
-}
-
-#menu ul li:hover{
-  background: #67b8b2;
 }
 
 #menu a{
@@ -78,7 +72,8 @@ font-family: Arial, Helvetica, sans-serif;
   padding: 7px;
 }
 
-.post h2{
+h2{
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   color: #333;
 }
@@ -101,17 +96,12 @@ font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   display:block;
   padding: 15px;
-  background: #85dad4;
   text-decoration: none;
   margin-top: 10px;
   width: 70px;
   color:white;
   box-shadow: 0px 0px 2px gray;
   margin-bottom: 20px;
-}
-
-.button-more:hover{
-  background: #67b8b2;
 }
 
 #sidebar{
@@ -146,7 +136,9 @@ font-family: Arial, Helvetica, sans-serif;
 
 form input[type="text"],
 form input[type="password"],
-form input[type="email"]{
+form input[type="email"],
+form input[type="number"],
+select{
   padding: 5px;
   border-radius: 2px;
   border: 1px solid #ccc;
@@ -158,7 +150,6 @@ form input[type="email"]{
 
 form input[type="submit"]{
   border-radius: 5px;
-  background: #85dad4;
   padding: 10px;
   border: 1px solid #ccc;
   color: white;
@@ -177,4 +168,90 @@ footer{
   margin-top: 50px;
   line-height: 47px;
   font-style: italic;
+}
+
+.bx-wrapper, .bx-viewport{
+  height: 250px !important;
+}
+
+#selector-theme{
+  position:fixed;
+  top:40%;
+  background: rgba(51,51,51,0.5);
+  width: 50px;
+  height: 100px;
+}
+
+#to-aqua,
+#to-blue,
+#to-pink{
+  width: 25px;
+  height: 25px;
+  border: 1px solid #444;
+  display: block;
+  margin: 0px auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#to-aqua{
+  background: #85dad4;
+}
+
+#to-blue{
+  background: blue;
+}
+
+#to-pink{
+  background: pink;
+}
+
+.subir{
+  color: white;
+  text-decoration: none;
+  display: block;
+  float: right;
+}
+
+#box{
+  width: 60%;
+  float: left;
+  margin-top: 50px;
+}
+
+#acordeon{
+  margin-top: 20px;
+}
+
+#reloj{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  border: 5px dashed #333;
+  width: 30%;
+  padding: 30px;
+  margin: 0px auto;
+}
+
+#form_contact{
+  width: 65%;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#form_contact label{
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.form-error{
+  /* float: right; */
+  font-size: 12px;
+  background: red;
+  color: white;
+  padding: 10px;
+  width: 100%;
 }

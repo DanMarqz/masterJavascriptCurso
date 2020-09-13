@@ -1,0 +1,33 @@
+body{
+  background-image: url(../img/bg-blue.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#logo{
+  background: blue;
+}
+
+#menu{
+  background: blue;
+}
+
+#menu ul li:hover{
+  background: lightskyblue;
+}
+
+.button-more{
+  background: blue;
+}
+
+.button-more:hover{
+  background: lightskyblue;
+}
+
+form input[type="submit"]{
+  background: blue;
+}
+
+form input[type="submit"]:hover{
+  background: lightskyblue;
+}

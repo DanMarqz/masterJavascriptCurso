@@ -1,0 +1,33 @@
+body{
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#logo{
+  background: #85dad4;
+}
+
+#menu{
+  background: #85dad4;
+}
+
+#menu ul li:hover{
+  background: #67b8b2;
+}
+
+.button-more{
+  background: #85dad4;
+}
+
+.button-more:hover{
+  background: #67b8b2;
+}
+
+form input[type="submit"]{
+  background: #85dad4;
+}
+
+form input[type="submit"]:hover{
+  background: #67b8b2;
+}
