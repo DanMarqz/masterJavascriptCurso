@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "aprendiendo-angular": {
+    "angular-aprendiendo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/aprendiendo-angular",
+            "outputPath": "dist/angular-aprendiendo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "aprendiendo-angular:build"
+            "browserTarget": "angular-aprendiendo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "aprendiendo-angular:build:production"
+              "browserTarget": "angular-aprendiendo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "aprendiendo-angular:build"
+            "browserTarget": "angular-aprendiendo:build"
           }
         },
         "test": {
@@ -110,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "aprendiendo-angular:serve"
+            "devServerTarget": "angular-aprendiendo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "aprendiendo-angular:serve:production"
+              "devServerTarget": "angular-aprendiendo:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "aprendiendo-angular",
+  "defaultProject": "angular-aprendiendo",
   "cli": {
-    "analytics": "8b43e14f-55ed-4721-b647-a01dcb02e6ab"
+    "analytics": "8b4d53e8-4acf-44a5-937c-79c9c03b32d2"
   }
 }
