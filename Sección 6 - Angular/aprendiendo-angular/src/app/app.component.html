@@ -1,0 +1,19 @@
+<!-- Highlight Card -->
+<div [ngStyle]="{
+                'background':config.fondo,
+                'padding': '20px',
+                'border': '5px solid black',
+                'border-color':config.color
+              }">
+  <h1>{{ title }}</h1>
+
+  <p>{{ descripcion }}</p>
+<!-- 
+  <videojuego *ngIf='mostrar_videojuegos'></videojuego>
+  <button (click)='ocultarVideojuegos(false)' *ngIf='mostrar_videojuegos'>Ocultar Videojuegos</button>
+  <button (click)='ocultarVideojuegos(true)' *ngIf='!mostrar_videojuegos'>Mostrar Videojuegos</button> 
+  <refrescos></refrescos> 
+-->
+  <cereales></cereales>
+
+</div>

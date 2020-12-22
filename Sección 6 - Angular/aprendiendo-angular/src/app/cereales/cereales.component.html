@@ -1,0 +1,51 @@
+<h2> {{titulo}} </h2>
+
+<p>Añadir marca</p>
+<p>
+<input type="text" [(ngModel)]="mi_marca" (keyup.enter)="mostrarPalabra()">
+<button (click)=getMarca()>Mostrar Marca</button>
+<button (click)=addMarca()>Añadir Marca</button>
+</p>
+<p>{{mi_marca}}</p>
+
+<p>Compra tus cereales favoritos</p>
+
+<ul>
+  <li *ngFor="let marca of marcas; let indice = index">
+    {{indice + ' - ' + marca}}
+    <button (click)="borrarMarca(indice)">Borrar</button>
+  </li>
+</ul>
+
+<p>Los cereales que tenemos disponibles son: </p>
+
+<ul> 
+  <li *ngFor="let conflei of cereales">
+
+      <span [ngStyle]="{'text-decoration' : !conflei.stock ? 'line-through' : 'none'}">
+        {{conflei.nombre}} - <strong>{{conflei.precio}} $</strong>
+      </span>
+
+      <span *ngIf="conflei.precio < 1000"
+            [style.background]="conflei.precio < 1000 ? 'green' : 'trasparent'"
+            [style.color]="conflei.precio < 1000 ? 'white' : 'black'"
+            >¡OFERTA!</span>
+  </li>
+</ul>
+
+<p>La mayoría del color de cajas son: </p>
+<input type="text" [(ngModel)]="color">
+<ul [ngSwitch]="color">
+  <li *ngSwitchCase="'yellow'">
+    La mayoría de colores es <span [ngStyle]="{'background' : color}">Amarillo</span>
+  </li>
+  <li *ngSwitchCase="'blue'">
+    La mayoría de colores es  <span [ngStyle]="{'background' : color}">Azul</span>
+  </li>
+  <li *ngSwitchCase="'orange'">
+    La mayoría de colores es  <span [ngStyle]="{'background' : color}">Naranja</span>
+  </li>
+  <li *ngSwitchCase="'red'">
+    La mayoría de colores es  <span [ngStyle]="{'background' : color}">Rojo</span>
+  </li>
+</ul>
