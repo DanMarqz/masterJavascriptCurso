@@ -13,7 +13,7 @@
 <ul>
   <li *ngFor="let marca of marcas; let indice = index">
     {{indice + ' - ' + marca}}
-    <button (click)="borrarMarca(indice)">Borrar</button>
+    <!--<button (click)="borrarMarca(indice)">Borrar</button>-->
   </li>
 </ul>
 
@@ -23,7 +23,13 @@
   <li *ngFor="let conflei of cereales">
 
       <span [ngStyle]="{'text-decoration' : !conflei.stock ? 'line-through' : 'none'}">
-        {{conflei.nombre}} - <strong>{{conflei.precio}} $</strong>
+        {{conflei.nombre}} - 
+        <strong [class.altoPrecio]="conflei.precio >= 1000"
+                [ngClass]="{
+                  'fondoNegro': conflei.precio > 1000,
+                  'subrayado': conflei.marca == 'Kellogs'
+                }"
+          >{{conflei.precio}} $</strong>
       </span>
 
       <span *ngIf="conflei.precio < 1000"

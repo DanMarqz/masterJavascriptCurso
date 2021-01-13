@@ -1,0 +1,13 @@
+.altoPrecio{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.fondoNegro{
+  background: black;
+  color:white;
+}
+
+.subrayado{
+  text-decoration: underline;
+}
