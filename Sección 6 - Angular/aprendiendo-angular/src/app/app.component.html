@@ -8,12 +8,26 @@
   <h1>{{ title }}</h1>
 
   <p>{{ descripcion }}</p>
+
+  <nav>
+    <a [routerLink]="['/home']" [routerLinkActive]="['active']">Home</a> &nbsp;
+    <a [routerLink]="['/cereales']" [routerLinkActive]="['active']">Cereales</a> &nbsp;
+    <a [routerLink]="['/refrescos']" [routerLinkActive]="['active']">Refrescos</a> &nbsp;
+    <a [routerLink]="['/videojuego']" [routerLinkActive]="['active']" >Videojuegos</a> &nbsp;
+  </nav>
+
+  <hr>
+
 <!-- 
   <videojuego *ngIf='mostrar_videojuegos'></videojuego>
   <button (click)='ocultarVideojuegos(false)' *ngIf='mostrar_videojuegos'>Ocultar Videojuegos</button>
   <button (click)='ocultarVideojuegos(true)' *ngIf='!mostrar_videojuegos'>Mostrar Videojuegos</button> 
   <refrescos></refrescos> 
 -->
-  <cereales></cereales>
+  <!-- <cereales></cereales> -->
+
+  <router-outlet>
+
+  </router-outlet>
 
 </div>

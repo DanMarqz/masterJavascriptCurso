@@ -11,3 +11,7 @@
 .subrayado{
   text-decoration: underline;
 }
+
+.active:link{
+  background-color: hotpink;
+}
