@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { ExternoComponent } from './externo/externo.component';
 import { CodigofacilitoComponent } from './codigofacilito/codigofacilito.component'
 
+import { CalculadoraPipe } from './pipes/calculadora.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { CodigofacilitoComponent } from './codigofacilito/codigofacilito.compone
     RefrescosComponent,
     HomeComponent,
     ExternoComponent,
-    CodigofacilitoComponent
+    CodigofacilitoComponent,
+    CalculadoraPipe
   ],
   imports: [
     BrowserModule,
