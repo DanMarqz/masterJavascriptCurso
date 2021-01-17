@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { CerealesComponent } from './cereales/cereales.component';
 import { VideojuegoComponent } from './videojuego/videojuego.component';
 import { RefrescosComponent } from './refrescos/refrescos.component';
+import { ExternoComponent } from './externo/externo.component';
+import { CodigofacilitoComponent } from './codigofacilito/codigofacilito.component';
 
 //Array de rutas
 const appRoutes: Routes = [
@@ -15,6 +17,8 @@ const appRoutes: Routes = [
   {path: 'cereales', component: CerealesComponent},
   {path: 'videojuego', component: VideojuegoComponent},
   {path: 'refrescos/:nombre', component: RefrescosComponent},
+  {path: 'externo', component: ExternoComponent},
+  {path: 'codigofacilito', component: CodigofacilitoComponent},
   {path: '**', component: HomeComponent}
 ];
 

@@ -8,7 +8,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
   styleUrls: ['./refrescos.component.css']
 })
 export class RefrescosComponent implements OnInit {
-  public nombre: string;
+  // public nombre: string;
   // public followers: string;
 
   constructor(
@@ -18,14 +18,14 @@ export class RefrescosComponent implements OnInit {
 
   ngOnInit(): void {
     // Recoge valor de la url
-    this._route.params.subscribe((params: Params) => {
-      this.nombre = params.nombre;
-      // this.followers = +params.followers;
-      //this.nombre = params['nombre'];
-      if(this.nombre == 'ninguno'){
-        this._router.navigate(['/home'])
-      }
-    });
+    // this._route.params.subscribe((params: Params) => {
+    //   this.nombre = params.nombre;
+    //   // this.followers = +params.followers;
+    //   //this.nombre = params['nombre'];
+    //   if(this.nombre == 'ninguno'){
+    //     this._router.navigate(['/home'])
+    //   }
+    // });
   }
 
   redirigir(){

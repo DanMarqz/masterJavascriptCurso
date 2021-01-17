@@ -1,35 +1,32 @@
 import { createAotUrlResolver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Cereal } from '../models/cereal';
+import { CerealesService } from '../services/cereales.service';
 
 @Component({
   selector: 'cereales',
-  templateUrl: './cereales.component.html'
+  templateUrl: './cereales.component.html',
+  providers: [CerealesService]
 })
 
 export class CerealesComponent implements OnInit{
   public titulo: string = 'Componente de Cereales';
-  public cereales: Array<Cereal>;
+  public cereales!: Array<Cereal>;
   public marcas: String[];
   public color: string;
   public mi_marca: string;
 
-  constructor(){
+  constructor(
+    private _CerealesService: CerealesService
+  ){
     this.mi_marca = 'Fela';
     this.color = 'red';
     this.marcas = new Array();
-
-    this.cereales = [
-      new Cereal('Azucaradas','Amarillo','Maizoritos',150,1500,true),
-      new Cereal('Zucaritas','Blanco','Kellogs',50,850,true),
-      new Cereal('Choco Safari','Marron','Maizoritos',250,950,true),
-      new Cereal('Corn Flakes','Amarillo','Kellogs',25,1000,false),
-      new Cereal('Trix','Rosado','Lucky Charms',15,800,false)
-    ]
   }
 
   ngOnInit(){
-    console.log(this.cereales)
+    this.cereales = this._CerealesService.getCereal();
+    // alert(this._CerealesService.getTexto());
     this.getMarcas();
   }
 
@@ -51,7 +48,7 @@ export class CerealesComponent implements OnInit{
   }
 
 /*   borrarMarca(index){
-   //delete this.marcas[index];
+   delete this.marcas[index];
    this.marcas.splice(index, 1);
  }*/
 
